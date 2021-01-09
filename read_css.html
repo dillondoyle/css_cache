@@ -1,0 +1,30 @@
+<html>
+
+<head>
+
+</head>
+<body>
+    <style>
+        /*
+        :root {
+        --user: { "uuid": "","first_name":"Dillon" };
+        }
+        */
+        
+    </style>
+    <link rel="stylesheet" type="text/css" href="https://us-central1-smiling-garden-126003.cloudfunctions.net/css_cache">
+
+    <script>
+        function getStyle(element, style, no){
+            return window
+                .getComputedStyle(element)
+                .getPropertyValue(style)
+                .trim(); 
+        }
+
+        console.log(
+            JSON.parse( getStyle(document.body, '--user') )
+        );
+    </script>
+</body>
+</html>
