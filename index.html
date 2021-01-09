@@ -13,7 +13,7 @@
         
     </style>
     <link rel="stylesheet" type="text/css" href="https://us-central1-smiling-garden-126003.cloudfunctions.net/css_cache">
-
+<p id="the_data"></p>
     <script>
         function getStyle(element, style, no){
             return window
@@ -25,6 +25,8 @@
         console.log(
             JSON.parse( getStyle(document.body, '--user') )
         );
+
+        document.getElementById('the_data').innerHTML = JSON.parse( getStyle(document.body, '--user') )
     </script>
 </body>
 </html>
