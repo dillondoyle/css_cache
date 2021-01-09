@@ -26,7 +26,7 @@
             JSON.parse( getStyle(document.body, '--user') )
         );
 
-        document.getElementById('the_data').innerHTML = JSON.parse( getStyle(document.body, '--user') )
+        document.getElementById('the_data').innerHTML = JSON.stringify(JSON.parse( getStyle(document.body, '--user') ))
     </script>
 </body>
 </html>
